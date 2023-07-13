@@ -74,3 +74,25 @@ $ vim ~/.gitconfig
 
 $ code ~/.gitconfig
 ```
+
+
+### 원격 저장소 git에 등록
+
+```bash 
+$ git remote add {remote _nickname} {remote_url}
+```
+
+### 원격 저장소에 업로드
+```bash
+$ git push origin master
+$ git pull origin master
+
+```
+
+
+### 원격저장소에 다운로드
+
+``` bash
+
+
+```
