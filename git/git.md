@@ -90,9 +90,8 @@ $ git pull origin master
 ```
 
 
-### 원격저장소에 다운로드
+### 원격저장소에서 다운로드
 
 ``` bash
-
-
+$ git clone 레파지토리 주소
 ```
