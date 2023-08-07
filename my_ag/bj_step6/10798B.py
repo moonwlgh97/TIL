@@ -1,9 +1,21 @@
 import sys
 input = sys.stdin.readline
-
-a=[list(input()) for _ in range(5)]
+a=[]
+for i in range(5):
+    a.append(list(input().strip()))
+li1=[]
 
 for i in range(5):
-    for j in range(5):
+    li1.append(len(a[i]))
 
-     print(a[j][i], end='')
+
+for i in range(max(li1)):
+    for j in range(5):
+         if len(a[j]) <= i: 
+             pass
+         else:
+            print(a[j][i],end="")
+
+        
+
+  
