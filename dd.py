@@ -19,4 +19,4 @@ for tc in range(1, T+1):
                     sum= sum+li[nx][ny]
             ans.append(sum)        
     print(f'#{tc} {max(ans)}')
-    ddd
+    
