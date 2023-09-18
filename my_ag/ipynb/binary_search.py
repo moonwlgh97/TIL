@@ -21,5 +21,5 @@ def binarySearch(target):
         else:
             high= mid -1
 
-    # 해당데이터를 찾지 못한 경우우
+    # 해당데이터를 찾지 못한 경우
     return -1
