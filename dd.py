@@ -1,26 +1,34 @@
-def bfs(node):
-    q=[(node, 1)]
-    visited[node]=0
-    while q:
-        start, cnt = q.pop(0)
-        G[start].sort()
+T= int(input())
 
-        for next in G[start]:
-            if visited[next]==-1:
-                
-                visited[next]= (visited[start]+1)
-                q.append(next)
+def back(product,idx):
+    global min
+    if product > min:
+        return
+    if sum(visited) == n:
+        if product < min:
+            min = product
+        return
 
-n,m,r = map(int,input().split())
-G= [[] for _ in range(n+1)]
-visited = [-1] *(n+1)
-q=[]
-
-for _ in range(m):
-    i, j = map(int, input().split())
-    G[i].append(j)
-    G[j].append(i)
+    for i in range(n):
+        if visited[i]==0:
+            visited[i]=1
+            back(li[idx][i]+product,idx+1)
+            visited[i]=0
 
 
-bfs(r)
-print(visited)
+
+
+
+for tc in range(1, T+1):
+    n = int(input())
+    li= [list(map(int,input().split())) for _ in range(n)]
+    min =0
+    for i in range(n):
+        min += sum(li[i])
+    visited=[0]*n
+    back(0,0)
+    print(f'#{tc} {min}')
+
+
+
+
